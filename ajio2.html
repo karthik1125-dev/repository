@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AJIO Clone</title>
   <link rel="stylesheet" href="ajio2.css" />
+  <link rel="stylesheet" href="cart.html"/>
 </head>
 <body>
   <header>
@@ -64,22 +65,25 @@
       </ul>
     </nav>
     <div class="right-nav">
-      <input type="text" placeholder="Search.." name="search">
-  <button type="button" onclick="alert('Hello world!')">Search</button>
- 
-      <span>❤️</span>
-      <span>🛍️</span>
+      <input type="text" placeholder="Search AJIO" />
+      <span>❤</span>
+      <span>🛍</span>
     </div>
   </header>
 
   <section class="banner">
-    <img src="shirt2.jpg" alt="Main Banner" />
-    <div class="overlay">
-      <h2>theses are the design of ajio</h2>
-      <p>MIN. 40% OFF*</p>
-      <button>SHOP NOW</button>
-    </div>
-  </section>
+  <div class="slideshow-container">
+    <img src="j.webp" class="banner-slide" />
+    <img src="shirt2.jpg" class="banner-slide" />
+    <img src="j.webp" class="banner-slide" />
+  </div>
+  <div class="overlay">
+    <h2>theses are the design of ajio</h2>
+    <p>MIN. 40% OFF*</p>
+    <button onclick="location.href='shop.html'">SHOP NOW</button>
+    <a href="https://www.ajio.com" class="banner"></a>
+  </div>
+</section>
 
   <section class="promo">
     <h3>Get 5%* Instant Discount</h3>
@@ -108,20 +112,32 @@
 
   <section class="image-slider">
     <div class="slider-track">
-      <img src="shirt2.jpg" alt="Banner 1" />
-      <img src="j.webp" alt="Zeel Ad" />
-      <img src="shirt2.jpg" alt="H&M Ad" />
-    
+      <div class="image-container">
+        <img src="shirt2.jpg" alt="Banner 1" />
+        <p>Price : $ 11.54</p>
+        <button onclick="location.href='cart.html'">Add to Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="j.webp" alt="Zeel Ad" />
+        <p>Price : $10.99</p>
+        <button onclick="location.href='cart.html'">Add to Cart</button>
+      </div>
+      <div class="image-container">
+        <img src="shirt2.jpg" alt="H&M Ad" />
+        <p>Price : $9.99</p>
+        <button onclick="location.href='cart.html'">Add to Cart</button>
+      </div>
+      <!-- Add more images as needed -->
     </div>
   </section>
-
+   
   <footer>
     <p>&copy; 2025 AJIO Clone. All rights reserved.</p>
   </footer>
 
   <script src="ajio2.js"></script>
   <script>
-    
+    // Loop marquee direction every 3 seconds
     const marquee = document.getElementById('ajio-marquee');
     let directions = ['left', 'right', 'up', 'down'];
     let idx = 0;
