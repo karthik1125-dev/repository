@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart - AJIO Clone</title>
+  <link rel="stylesheet" href="ajio2.css" />
+  <link rel="stylesheet" href="payment.html"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .cart-message {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .product-details {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+    a.back-link {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    a.back-link:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>Shopping Cart</header>
+  <div class="product-details">
+    <h2>Product Name: Stylish Shirt</h2>
+    <p>Price: $9.99</p>
+    <p>Discount: 20% off</p>
+    <p>Coupons: Use code SAVE20 for extra 5% off</p>
+    <p>Additional Details: Water-resistant, available in multiple colors</p>
+    <button class="buy-button" onclick="location.href='payment.html'">Buy Now</button>
+  </div>
+  <a href="ajio2.html" class="back-link">Continue Shopping</a>
+</body>
+</html>
